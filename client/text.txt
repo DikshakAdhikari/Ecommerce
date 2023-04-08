@@ -3,4 +3,13 @@
 3. (Header.scss) First 3 0's inside rgba represents black color and 0.1 reprensents opacity magnitude
 4. (Header.scss) as our icons are actually of type svg , so to style them we use svg
 5. We are putting voilet color bubble inside which we have a number for telling number of items in the cart, we style bubble such that it comes in right top of the cart icon corner
-
+6. So all the css we have written without media query will be our for mobile and media query md is used for specific desktop screens.
+7. useEffect is called only once when the component is rendered. Depends on the dependency or the second argument of the useEffect
+------------------------------------------------------------------------------------------------------------------------
+///// Making our header stickey
+ In Header.jsx
+ 8.It means our even would be scroll and on scrolling we want handleScroll method to run.
+ 9. We want our header to get stickey after some point, so we want that as our scroll amount i.e. offset goes over 200px height then we want our header should be stickey. So for that we do "setScrolled" state to be true, else "setScrolled" state remains false.
+ 10. so by using our state, whenever our "scrolled" state is true we add our 'stickey-header' class, else false then do nothing 
+ 11. In (Header.scss) we do styling for "sticky-header" class, by setting 'postion' as sticky from top. And also we take use of animation to transform the header section while scrolling for doing this we make use of @keyframes .
+ ------------------------------------------------------------------------------------------------------------------------
