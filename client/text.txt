@@ -13,3 +13,10 @@
  10. so by using our state, whenever our "scrolled" state is true we add our 'stickey-header' class, else false then do nothing 
  11. In (Header.scss) we do styling for "sticky-header" class, by setting 'postion' as sticky from top. And also we take use of animation to transform the header section while scrolling for doing this we make use of @keyframes .
  ------------------------------------------------------------------------------------------------------------------------
+////// Banner section starts
+In (Banner.scss)
+12.   height: calc(100vh - 80px); -> As 80px is our header height. So from 100vh for banner section we need to subtract 80px of height , so that we get the correct view height . Otherwise the banner section will extend a little bit down.
+13. justify-content: flex-end; ->  if we want our banner img should align at rightmost side, so we need to do flex-end, cz by deafault it is flex-start so it would push img to the left side.
+14. margin: 0 auto; ->  Margin from top and bottom will be 0 and auto-> left and right space will get equaly distriubute
+15. flex-direction: column-reverse; -> As here we are dealing with mobile so we know data must be in column. In HTML 1st we have div for paragraphs then we have div for img . But we want that without changing HTML lets 1st include image then paragraph , So for doing that we make use of reverse property i.e. 'column-reverse'.
+
