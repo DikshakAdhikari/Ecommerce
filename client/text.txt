@@ -19,4 +19,6 @@ In (Banner.scss)
 13. justify-content: flex-end; ->  if we want our banner img should align at rightmost side, so we need to do flex-end, cz by deafault it is flex-start so it would push img to the left side.
 14. margin: 0 auto; ->  Margin from top and bottom will be 0 and auto-> left and right space will get equaly distriubute
 15. flex-direction: column-reverse; -> As here we are dealing with mobile so we know data must be in column. In HTML 1st we have div for paragraphs then we have div for img . But we want that without changing HTML lets 1st include image then paragraph , So for doing that we make use of reverse property i.e. 'column-reverse'.
+--------------------------------------------------------------------------------------------------------------------------
+
 
