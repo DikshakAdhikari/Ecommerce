@@ -1,2 +1,6 @@
-1.(context.js) this children that we passed as a prop are the all components inside AppContext in App.js
-2.(context.js) In context.js we'll write all logic of our application ex- cart logic like set items in cart or update items in cart. It means we'll put all global states logic that we need in multiple places we'll write in context.js 
+1. (context.js) this children that we passed as a prop are the all components inside AppContext in App.js
+2. In (context.js) we'll write all logic of our application ex- cart logic like set items in cart or update items in cart. It means we'll put all global states logic that we need in multiple places we'll write in context.js and will use those in different other components. 
+3. (Header.scss) First 3 0's inside rgba represents black color and 0.1 reprensents opacity magnitude
+4. (Header.scss) as our icons are actually of type svg , so to style them we use svg
+5. We are putting voilet color bubble inside which we have a number for telling number of items in the cart, we style bubble such that it comes in right top of the cart icon corner
+
