@@ -8,17 +8,23 @@
 ------------------------------------------------------------------------------------------------------------------------
 ///// Making our header stickey
  In Header.jsx
- 8.It means our even would be scroll and on scrolling we want handleScroll method to run.
+ 8. It means our even would be scroll and on scrolling we want handleScroll method to run.
  9. We want our header to get stickey after some point, so we want that as our scroll amount i.e. offset goes over 200px height then we want our header should be stickey. So for that we do "setScrolled" state to be true, else "setScrolled" state remains false.
  10. so by using our state, whenever our "scrolled" state is true we add our 'stickey-header' class, else false then do nothing 
  11. In (Header.scss) we do styling for "sticky-header" class, by setting 'postion' as sticky from top. And also we take use of animation to transform the header section while scrolling for doing this we make use of @keyframes .
  ------------------------------------------------------------------------------------------------------------------------
 ////// Banner section starts
 In (Banner.scss)
-12.   height: calc(100vh - 80px); -> As 80px is our header height. So from 100vh for banner section we need to subtract 80px of height , so that we get the correct view height . Otherwise the banner section will extend a little bit down.
+12. height: calc(100vh - 80px); -> As 80px is our header height. So from 100vh for banner section we need to subtract 80px of height , so that we get the correct view height . Otherwise the banner section will extend a little bit down.
 13. justify-content: flex-end; ->  if we want our banner img should align at rightmost side, so we need to do flex-end, cz by deafault it is flex-start so it would push img to the left side.
 14. margin: 0 auto; ->  Margin from top and bottom will be 0 and auto-> left and right space will get equaly distriubute
 15. flex-direction: column-reverse; -> As here we are dealing with mobile so we know data must be in column. In HTML 1st we have div for paragraphs then we have div for img . But we want that without changing HTML lets 1st include image then paragraph , So for doing that we make use of reverse property i.e. 'column-reverse'.
 --------------------------------------------------------------------------------------------------------------------------
-
+In Product.scss
+16. width: calc(50% - 5px); -> as because we have taken width to be 50%, it means in mobile we see products in 2 columns
+17. width: calc(25% - 15px); ->as because we have taken width to be 25%, it means in desktop we see products in 4 columns
+18. background-color: rgba(0,0,0,0.05); -> we are giving 0.05 cz we want product thumbnail background color to be very light
+19.text-overflow: ellipsis; white-space: nowrap; overflow: hidden; //If we want the text to be in one line and also we want it not to overflow or should not exceed its space limit , so for that we put double dot ex- fdgfg.. on clicking that we can see the full text, So for doing that we write stated three different line code.
+----------------------------------------------------------------------------------------------------------------------------
+20.(Proucts.js) {/*20. It means wherever innerPage is false there this peice of line will render*/}
 
